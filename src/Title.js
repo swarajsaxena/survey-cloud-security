@@ -33,6 +33,7 @@ const Container = styled.div`
 	}
 
 	@media (max-width: 700px) {
+		padding: 3rem 0;
 		.heading {
 			font-size: 1.5rem;
 			font-weight: 600;
