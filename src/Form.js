@@ -95,7 +95,7 @@ const Form = () => {
 									name='age'
 									value='45+'
 								/>
-								<label htmlFor='age3'>16-25</label>
+								<label htmlFor='age3'>45+</label>
 							</div>
 						</div>
 					</div>
