@@ -3,7 +3,7 @@ import React from "react";
 import Form from "./Form";
 import Title from "./Title";
 
-function App() {
+const App = () => {
 	return (
 		<div className='app'>
 			<section className='section_left'>
@@ -14,6 +14,6 @@ function App() {
 			</section>
 		</div>
 	);
-}
+};
 
 export default App;

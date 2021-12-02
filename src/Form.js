@@ -9,6 +9,7 @@ const Form = () => {
 	const [ques2, setques2] = useState("");
 	const [ques3, setques3] = useState("");
 	const [ques4, setques4] = useState("");
+	const [ques5, setques5] = useState("");
 
 	const submitHandler = async (event) => {
 		event.preventDefault();
@@ -29,6 +30,7 @@ const Form = () => {
 						ques2,
 						ques3,
 						ques4,
+						ques5,
 					}),
 				}
 			);
@@ -38,17 +40,17 @@ const Form = () => {
 		} catch (err) {
 			console.log(err.message);
 		}
-		event.target.reset();
-
 		console.log({
-			formSubmitted,
-			name,
-			age,
-			ques1,
-			ques2,
-			ques3,
-			ques4,
+			formSubmitted: formSubmitted,
+			name: name,
+			age: age,
+			ques1: ques1,
+			ques2: ques2,
+			ques3: ques3,
+			ques4: ques4,
+			ques5: ques5,
 		});
+		event.target.reset();
 	};
 
 	return (
@@ -104,42 +106,171 @@ const Form = () => {
 							1. Do you think cloud computing and storage is the
 							future ?
 						</div>
-						<textarea
-							placeholder='Your Answer'
-							rows='4'
-							onChange={(e) => setques1(e.target.value)}
-						/>
+						<div className='radio_input_box flex-col'>
+							<div className='radio_input'>
+								<input
+									onChange={(e) => setques1(e.target.value)}
+									type='radio'
+									id='age1'
+									name='ques1'
+									value='Yes'
+								/>
+								<label htmlFor='ques1'>Yes </label>
+							</div>
+							<div className='radio_input'>
+								<input
+									onChange={(e) => setques1(e.target.value)}
+									type='radio'
+									id='age1'
+									name='ques1'
+									value='No'
+								/>
+								<label htmlFor='ques1'>No </label>
+							</div>
+						</div>
 					</div>
 					<div className='input_box'>
 						<div className='input_ques'>
 							2. How important do you think is cloud security is ?
 						</div>
-						<textarea
-							placeholder='Your Answer'
-							rows='4'
-							onChange={(e) => setques2(e.target.value)}
-						/>
+						<div className='radio_input_box flex-col'>
+							<div className='radio_input'>
+								<input
+									onChange={(e) => setques2(e.target.value)}
+									type='radio'
+									id='age1'
+									name='ques2'
+									value='cloud security is imperative for business'
+								/>
+								<label htmlFor='ques2'>
+									cloud security is imperative for business{" "}
+								</label>
+							</div>
+							<div className='radio_input'>
+								<input
+									onChange={(e) => setques2(e.target.value)}
+									type='radio'
+									id='age1'
+									name='ques2'
+									value='Effective and safe recovery of data in times of a disaster & Protect from DDoS attacks'
+								/>
+								<label htmlFor='ques2'>
+									Effective and safe recovery of data in times
+									of a disaster & Protect from DDoS attacks
+								</label>
+							</div>
+							<div className='radio_input'>
+								<input
+									onChange={(e) => setques2(e.target.value)}
+									type='radio'
+									id='age1'
+									name='ques2'
+									value='Cloud security solutions enable 24×7 monitoring of the application and cloud-based assets'
+								/>
+								<label htmlFor='ques2'>
+									Cloud security solutions enable 24×7
+									monitoring of the application and
+									cloud-based assets
+								</label>
+							</div>
+							<div className='radio_input'>
+								<input
+									onChange={(e) => setques2(e.target.value)}
+									type='radio'
+									id='age1'
+									name='ques2'
+									value='All of these'
+								/>
+								<label htmlFor='ques2'>All of these</label>
+							</div>
+						</div>
 					</div>
 					<div className='input_box'>
 						<div className='input_ques'>
 							3. Do you feel your data present in drive is
 							absolutely free ?
 						</div>
-						<textarea
-							placeholder='Your Answer'
-							rows='4'
-							onChange={(e) => setques3(e.target.value)}
-						/>
+						<div className='radio_input_box flex-col'>
+							<div className='radio_input'>
+								<input
+									onChange={(e) => setques3(e.target.value)}
+									type='radio'
+									id='age1'
+									name='ques3'
+									value='Yes, I think it is safe.'
+								/>
+								<label htmlFor='ques3'>
+									Yes, I think it is safe.{" "}
+								</label>
+							</div>
+							<div className='radio_input'>
+								<input
+									onChange={(e) => setques3(e.target.value)}
+									type='radio'
+									id='age1'
+									name='ques3'
+									value='No, I dont think that my data is safe'
+								/>
+								<label htmlFor='ques3'>
+									No, I dont think that my data is safe{" "}
+								</label>
+							</div>
+						</div>
 					</div>
 					<div className='input_box'>
 						<div className='input_ques'>
-							4. What if you are victim of data breach ?
+							4. Are you victim of data breach ?
 						</div>
-						<textarea
-							placeholder='Your Answer'
-							rows='4'
-							onChange={(e) => setques4(e.target.value)}
-						/>
+						<div className='radio_input_box flex-col'>
+							<div className='radio_input'>
+								<input
+									onChange={(e) => setques4(e.target.value)}
+									type='radio'
+									id='age1'
+									name='ques4'
+									value='Yes'
+								/>
+								<label htmlFor='ques4'>Yes </label>
+							</div>
+							<div className='radio_input'>
+								<input
+									onChange={(e) => setques4(e.target.value)}
+									type='radio'
+									id='age1'
+									name='ques4'
+									value='No'
+								/>
+								<label htmlFor='ques4'>No </label>
+							</div>
+						</div>
+					</div>
+					<div className='input_box'>
+						<div className='input_ques'>
+							To predict and defeat attacks in real time,
+							cybersecurity must move to the cloud. Do you agree?
+						</div>
+						<div className='radio_input_box flex-col'>
+							<div className='radio_input'>
+								<input
+									onChange={(e) => setques5(e.target.value)}
+									type='radio'
+									id='age1'
+									name='ques5'
+									value='Yes'
+								/>
+								<label htmlFor='ques5'>Yes </label>
+							</div>
+							<div className='radio_input'>
+								<input
+									onChange={(e) => setques5(e.target.value)}
+									type='radio'
+									id='age1'
+									name='ques5'
+									value='No'
+								/>
+								<label htmlFor='ques5'>No </label>
+							</div>
+						</div>
 					</div>
 
 					<input type='submit' className='cta' value='Submit' />
@@ -298,6 +429,7 @@ const Container = styled.div`
 		.radio_input_box {
 			/* width: 100%; */
 			border: 2px solid hsl(263, 60%, 28%);
+			transition: all 150ms ease-in-out;
 			padding: 1rem;
 			border-radius: 4px;
 			display: flex;
@@ -307,11 +439,25 @@ const Container = styled.div`
 
 			.radio_input {
 				display: flex;
-				gap: 0.2rem;
+				gap: 0.5rem;
 				align-items: center;
 				cursor: pointer;
+
+				label {
+					/* margin-top: -10px; */
+				}
 				/* border: 1px solid; */
 			}
+		}
+
+		.radio_input_box:hover {
+			background-color: hsl(263, 60%, 48%, 0.1);
+			border: 2px solid hsl(263, 60%, 68%);
+		}
+
+		.flex-col {
+			display: flex;
+			flex-direction: column;
 		}
 
 		.cta {
