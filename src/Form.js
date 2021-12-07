@@ -188,7 +188,7 @@ const Form = () => {
 					<div className='input_box'>
 						<div className='input_ques'>
 							3. Do you feel your data present in drive is
-							absolutely free ?
+							absolutely safe ?
 						</div>
 						<div className='radio_input_box flex-col'>
 							<div className='radio_input'>
@@ -300,7 +300,7 @@ const Form = () => {
 						<div className='question'>
 							<div className='q'>
 								3. Do you feel your data present in drive is
-								absolutely free ?
+								absolutely safe ?
 							</div>
 							<div className='ans'>{ques3}</div>
 						</div>
