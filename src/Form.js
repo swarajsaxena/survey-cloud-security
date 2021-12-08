@@ -62,6 +62,7 @@ const Form = () => {
 						<input
 							placeholder='Your Name'
 							type='text'
+							required
 							onChange={(e) => setName(e.target.value)}
 						/>
 					</div>
@@ -73,6 +74,7 @@ const Form = () => {
 								<input
 									onChange={(e) => setAge(e.target.value)}
 									type='radio'
+									required
 									id='age1'
 									name='age'
 									value='16 - 25'
@@ -83,6 +85,7 @@ const Form = () => {
 								<input
 									onChange={(e) => setAge(e.target.value)}
 									type='radio'
+									required
 									id='age2'
 									name='age'
 									value='25 - 45'
@@ -93,6 +96,7 @@ const Form = () => {
 								<input
 									onChange={(e) => setAge(e.target.value)}
 									type='radio'
+									required
 									id='age3'
 									name='age'
 									value='45+'
@@ -111,6 +115,7 @@ const Form = () => {
 								<input
 									onChange={(e) => setques1(e.target.value)}
 									type='radio'
+									required
 									id='age1'
 									name='ques1'
 									value='Yes'
@@ -121,6 +126,7 @@ const Form = () => {
 								<input
 									onChange={(e) => setques1(e.target.value)}
 									type='radio'
+									required
 									id='age1'
 									name='ques1'
 									value='No'
@@ -138,6 +144,7 @@ const Form = () => {
 								<input
 									onChange={(e) => setques2(e.target.value)}
 									type='radio'
+									required
 									id='age1'
 									name='ques2'
 									value='cloud security is imperative for business'
@@ -150,6 +157,7 @@ const Form = () => {
 								<input
 									onChange={(e) => setques2(e.target.value)}
 									type='radio'
+									required
 									id='age1'
 									name='ques2'
 									value='Effective and safe recovery of data in times of a disaster & Protect from DDoS attacks'
@@ -163,6 +171,7 @@ const Form = () => {
 								<input
 									onChange={(e) => setques2(e.target.value)}
 									type='radio'
+									required
 									id='age1'
 									name='ques2'
 									value='Cloud security solutions enable 24×7 monitoring of the application and cloud-based assets'
@@ -177,6 +186,7 @@ const Form = () => {
 								<input
 									onChange={(e) => setques2(e.target.value)}
 									type='radio'
+									required
 									id='age1'
 									name='ques2'
 									value='All of these'
@@ -195,6 +205,7 @@ const Form = () => {
 								<input
 									onChange={(e) => setques3(e.target.value)}
 									type='radio'
+									required
 									id='age1'
 									name='ques3'
 									value='Yes, I think it is safe.'
@@ -207,6 +218,7 @@ const Form = () => {
 								<input
 									onChange={(e) => setques3(e.target.value)}
 									type='radio'
+									required
 									id='age1'
 									name='ques3'
 									value='No, I dont think that my data is safe'
@@ -226,6 +238,7 @@ const Form = () => {
 								<input
 									onChange={(e) => setques4(e.target.value)}
 									type='radio'
+									required
 									id='age1'
 									name='ques4'
 									value='Yes'
@@ -236,6 +249,7 @@ const Form = () => {
 								<input
 									onChange={(e) => setques4(e.target.value)}
 									type='radio'
+									required
 									id='age1'
 									name='ques4'
 									value='No'
@@ -254,6 +268,7 @@ const Form = () => {
 								<input
 									onChange={(e) => setques5(e.target.value)}
 									type='radio'
+									required
 									id='age1'
 									name='ques5'
 									value='Yes'
@@ -264,6 +279,7 @@ const Form = () => {
 								<input
 									onChange={(e) => setques5(e.target.value)}
 									type='radio'
+									required
 									id='age1'
 									name='ques5'
 									value='No'
